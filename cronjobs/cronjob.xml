@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/cronjobs.xsd">
+	<import>
+		<cronjob>
+			<canbedisabled>0</canbedisabled>
+			<canbeedited>1</canbeedited>
+			<classpath>lib/system/cronjob/TwitterRepostCronjob.class.php</classpath>
+			<description>Synchronizing tweets from twitter.com</description>
+			<startminute>0,15,30,45</startminute>
+			<starthour>*</starthour>
+			<startdom>*</startdom>
+			<startmonth>*</startmonth>
+			<startdow>*</startdow>
+			<execmultiple>0</execmultiple>
+		</cronjob>
+	</import>
+</data>

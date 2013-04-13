@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.option">
+		<!-- Allgemein -->
+		<item name="wcf.acp.option.category.twitterrepost"><![CDATA[Twitter Repost]]></item>	
+		<item name="wcf.acp.option.category.twitterrepost.description"><![CDATA[]]></item>
+		
+		<!-- Kategorien -->
+		<item name="wcf.acp.option.category.twitterrepost_general"><![CDATA[Allgemein]]></item>	
+		<item name="wcf.acp.option.category.twitterrepost_general.description"><![CDATA[Allgemeine Einstellungen des Twitter Reposts]]></item>
+		
+		<item name="wcf.acp.option.category.twitterrepost_special"><![CDATA[Erweiterte Einstellungen]]></item>	
+		<item name="wcf.acp.option.category.twitterrepost_special.description"><![CDATA[Erweiterte Einstellungen bezüglich des Postings.]]></item>
+
+		<!-- Allgemeine Einstellungen -->
+		<item name="wcf.acp.option.twitterrepost_activate"><![CDATA[Modul aktivieren]]></item>
+		<item name="wcf.acp.option.twitterrepost_activate.description"><![CDATA[Aktiviert das Modul]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_posting"><![CDATA[Postingtyp]]></item>
+		<item name="wcf.acp.option.twitterrepost_posting.description"><![CDATA[Auswahl des Postingtyps]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_userid"><![CDATA[Verfasser-ID]]></item>
+		<item name="wcf.acp.option.twitterrepost_userid.description"><![CDATA[Die User-ID, die den Beitrag verfassen soll]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_username"><![CDATA[Verfassername]]></item>
+		<item name="wcf.acp.option.twitterrepost_username.description"><![CDATA[Der Name des Verfassers der den Beitrag verfassen soll (falls die Verfasser-ID ungültig ist)]]></item>
+
+		<item name="wcf.acp.option.twitterrepost_boardid"><![CDATA[Board-ID]]></item>
+		<item name="wcf.acp.option.twitterrepost_boardid.description"><![CDATA[Die ID des Forums, in dem das Thema eröffnet werden soll (wenn ein Thema eröffnet werden soll))]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_threadid"><![CDATA[Thread-ID]]></item>
+		<item name="wcf.acp.option.twitterrepost_threadid.description"><![CDATA[ID des Threads, in dem der Beitrag gepostet werdne soll (wenn ein Beitrag erstellt werden soll)]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_html"><![CDATA[HTML]]></item>
+		<item name="wcf.acp.option.twitterrepost_html.description"><![CDATA[HTML aktivieren]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_twittername"><![CDATA[Twittername]]></item>
+		<item name="wcf.acp.option.twitterrepost_twittername.description"><![CDATA[Der Name des Twitteraccounts]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_synctweets"><![CDATA[Tweetanzahl]]></item>
+		<item name="wcf.acp.option.twitterrepost_synctweets.description"><![CDATA[Zahl der maximal zu synchronisierenden Tweets]]></item>
+		
+		<!-- Erweiterte Einstellungen -->
+		<item name="wcf.acp.option.twitterrepost_title_template"><![CDATA[Template des Titels]]></item>
+		<item name="wcf.acp.option.twitterrepost_title_template.description"><![CDATA[Formatiert den Titel des Threads/Beitrages
+			<table border="0">
+			<tr><td><strong>%twittername</strong></td><td>Name des Twitteraccounts</td></tr>
+			<tr><td><strong>%tweetid</strong></td><td>ID des Tweets</td></tr>
+			<tr><td><strong>%tweet</strong></td><td>Text des Tweets</td></tr>
+			<tr><td><strong>%userlocation</strong></td><td>Location des Users</td></tr>
+			<tr><td><strong>%userimage</strong></td><td>Avatar des Users</td></tr>
+			<tr><td><strong>%userurl</strong></td><td>URL des Users</td></tr>
+			<tr><td><strong>%userdescription</strong></td><td>Beschreibung des Users</td></tr>
+			<tr><td><strong>%userfollowers</strong></td><td>Anzahl der Follower</td></tr>
+			<tr><td><strong>%userbackgroundimage</strong></td><td>Hintergrundbild des Users</td></tr>
+			<tr><td><strong>%date_CHAR</strong></td><td>Siehe http://php.net/manual/en/function.date.php</td></tr>
+		</table>]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_title_len"><![CDATA[Titellänge]]></item>
+		<item name="wcf.acp.option.twitterrepost_title_len.description"><![CDATA[Begrenzt die Läe des Titels.]]></item>
+		
+		<item name="wcf.acp.option.twitterrepost_content_template"><![CDATA[Template des Beitrages]]></item>
+		<item name="wcf.acp.option.twitterrepost_content_template.description"><![CDATA[Formatiert des Text im Beitrag
+			<table border="0">
+			<tr><td><strong>%twittername</strong></td><td>Name des Twitteraccounts</td></tr>
+			<tr><td><strong>%tweetid</strong></td><td>ID des Tweets</td></tr>
+			<tr><td><strong>%tweet</strong></td><td>Text des Tweets</td></tr>
+			<tr><td><strong>%userlocation</strong></td><td>Location des Users</td></tr>
+			<tr><td><strong>%userimage</strong></td><td>Avatar des Users</td></tr>
+			<tr><td><strong>%userurl</strong></td><td>URL des Users</td></tr>
+			<tr><td><strong>%userdescription</strong></td><td>Beschreibung des Users</td></tr>
+			<tr><td><strong>%userfollowers</strong></td><td>Anzahl der Follower</td></tr>
+			<tr><td><strong>%userbackgroundimage</strong></td><td>Hintergrundbild des Users</td></tr>
+			<tr><td><strong>%date_CHAR</strong></td><td>Siehe http://php.net/manual/en/function.date.php</td></tr>
+		</table>]]></item>
+		
+		<!-- Sprachvariablen der Optionen -->
+		<item name="wcf.acp.option.type.twitterrepost_general_thread"><![CDATA[Erstellen eines Themas]]></item>
+		<item name="wcf.acp.option.type.twitterrepost_general_post"><![CDATA[Erstellen eines Beitrages]]></item>
+	</category>
+</language>

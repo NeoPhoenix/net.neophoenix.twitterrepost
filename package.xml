@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="net.neophoenix.twitterrepost" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename>Twitter Repost</packagename>
+		<packagedescription><![CDATA[Reposting von Tweets]]></packagedescription>
+		<version>1.0.0</version>
+		<date>2013-03-06</date>
+		<plugin>com.woltlab.wbb</plugin>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>NeoPhoenix</author>
+		<authorurl>http://www.neophoenix.net/</authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage>com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<languages languagecode="de-informal">languages/de-informal.xml</languages>
+		<languages languagecode="de">languages/de.xml</languages>
+		<languages languagecode="en">languages/en.xml</languages>
+		<files>files.tar</files>
+		<options>options/options.xml</options>
+		<sql>sql/install.sql</sql>
+		<cronjobs>cronjobs/cronjob.xml</cronjobs>
+	</instructions>
+</package>

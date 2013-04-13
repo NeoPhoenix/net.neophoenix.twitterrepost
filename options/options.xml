@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
+<data>
+    <import>
+		<categories>
+			<category name="twitterrepost"/>
+			<category name="twitterrepost_general">
+				<parent>twitterrepost</parent>
+			</category>
+			<category name="twitterrepost_special">
+				<parent>twitterrepost</parent>
+			</category>
+		</categories>		
+        <options>
+			<!-- Allgemeine Einstellungen -->
+			<option name="twitterrepost_activate">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="twitterrepost_posting">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>radiobuttons</optiontype>
+<selectoptions><![CDATA[0:wcf.acp.option.type.twitterrepost_general_thread
+1:wcf.acp.option.type.twitterrepost_general_post]]></selectoptions>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="twitterrepost_userid">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="twitterrepost_username">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[GitHub Bot]]></defaultvalue>
+				<showorder>4</showorder>
+			</option>
+			<option name="twitterrepost_boardid">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>5</showorder>
+			</option>
+			<option name="twitterrepost_threadid">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>6</showorder>
+			</option>
+			<option name="twitterrepost_twittername">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue></defaultvalue>
+				<showorder>7</showorder>
+			</option>
+			<option name="twitterrepost_synctweets">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>15</defaultvalue>
+				<showorder>8</showorder>
+			</option>
+			
+			<!-- Erweiterte Einstellungen -->
+			<option name="twitterrepost_title_template">
+				<categoryname>twitterrepost_special</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[%twittername - %tweetid]]></defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="twitterrepost_title_len">
+				<categoryname>twitterrepost_special</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>32</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="twitterrepost_content_template">
+				<categoryname>twitterrepost_special</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[[quote=Update vom %date_d.%date_m.%date_Y, %date_G:%date_i Uhr]%tweet[/url]]]></defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="twitterrepost_html">
+				<categoryname>twitterrepost_special</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>4</showorder>
+			</option>
+        </options>
+    </import>
+</data>
