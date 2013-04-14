@@ -37,6 +37,9 @@
 		<item name="wcf.acp.option.twitterrepost_twittername"><![CDATA[Twittername]]></item>
 		<item name="wcf.acp.option.twitterrepost_twittername.description"><![CDATA[Name of the twitteraccount]]></item>
 		
+		<item name="wcf.acp.option.twitterrepost_hashtagfilter"><![CDATA[Hashtagfilter]]></item>
+		<item name="wcf.acp.option.twitterrepost_hashtagfilter.description"><![CDATA[Hashtags or strings the tweet must contain to be published]]></item>		
+		
 		<item name="wcf.acp.option.twitterrepost_synctweets"><![CDATA[Tweetcount]]></item>
 		<item name="wcf.acp.option.twitterrepost_synctweets.description"><![CDATA[Number of synchronizing tweets]]></item>
 		

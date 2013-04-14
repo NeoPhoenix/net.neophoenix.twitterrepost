@@ -20,7 +20,8 @@ class TwitterRepostCronjob implements Cronjob
 				'boardID'		=> TWITTERREPOST_BOARDID,
 				'threadID'		=> TWITTERREPOST_THREADID,
 				'twitterName'	=> TWITTERREPOST_TWITTERNAME,
-				'twitterCount'	=> TWITTERREPOST_SYNCTWEETS
+				'twitterCount'	=> TWITTERREPOST_SYNCTWEETS,
+				'hashtagFilter'	=> array_filter(array_unique(explode('\n',str_replace('\r','',TWITTERREPOST_HASHTAGFILTER))))
 			);
 	
 	public function __construct()
@@ -54,6 +55,18 @@ class TwitterRepostCronjob implements Cronjob
 		{
 			$timestamp = intval(strtotime($tweet->created_at));
 			if($timestamp <= $newest_tweet) continue;
+			$filtered = false;
+			if(sizeof($this->plugindata['hashtagFilter']) == 0) $filtered = true;
+			else
+			{
+				foreach($this->plugindata['hashtagFilter'] as $hashtag)
+				{
+					if(strpos($hashtag,$tweet->text) === false) continue;
+					$filtered = true;
+					break;
+				}
+			}
+			if(!$filtered) continue;
 			
 			$hash = md5($timestamp.intval($tweet->user->id).$tweet->text);
 			$sql = 'SELECT * FROM wcf'.WCF_N.'_twitter_repost WHERE hash="'.$hash.'"';

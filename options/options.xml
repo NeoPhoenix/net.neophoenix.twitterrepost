@@ -57,11 +57,17 @@
 				<defaultvalue></defaultvalue>
 				<showorder>7</showorder>
 			</option>
+			<option name="twitterrepost_hashtagfilter">
+				<categoryname>twitterrepost_general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue></defaultvalue>
+				<showorder>8</showorder>
+			</option>
 			<option name="twitterrepost_synctweets">
 				<categoryname>twitterrepost_general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>15</defaultvalue>
-				<showorder>8</showorder>
+				<showorder>9</showorder>
 			</option>
 			
 			<!-- Erweiterte Einstellungen -->
